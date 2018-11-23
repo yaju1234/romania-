@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#aa000000">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="#ffffff"
+        android:layout_marginRight="100dp"
+        >
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_160sdp"
+            android:background="@drawable/banner"/>
+        <TextView
+            android:id="@+id/tvDashboard"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Dashboard"
+            android:paddingBottom="@dimen/_10sdp"
+            android:paddingTop="@dimen/_40sdp"
+            android:paddingLeft="@dimen/_10sdp"
+            android:textSize="@dimen/_14sdp"
+            android:textColor="@color/txtblack"
+            />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/colorPrimary"></View>
+        <TextView
+            android:id="@+id/tvResDetails"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Restaurant Details"
+            android:paddingBottom="@dimen/_10sdp"
+            android:paddingTop="@dimen/_10sdp"
+android:visibility="gone"
+            android:paddingLeft="@dimen/_10sdp"
+            android:textSize="@dimen/_14sdp"
+            android:textColor="@color/txtblack"
+            />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:visibility="gone"
+
+            android:background="@color/colorPrimary"></View>
+        <TextView
+            android:id="@+id/tvMenus"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Menus"
+            android:visibility="gone"
+
+            android:paddingBottom="@dimen/_10sdp"
+            android:paddingTop="@dimen/_10sdp"
+            android:paddingLeft="@dimen/_10sdp"
+            android:textSize="@dimen/_14sdp"
+            android:textColor="@color/txtblack"
+            />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/colorPrimary"></View>
+        <TextView
+            android:id="@+id/tvOrderManagement"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Order Management"
+            android:paddingBottom="@dimen/_10sdp"
+            android:paddingTop="@dimen/_10sdp"
+
+            android:paddingLeft="@dimen/_10sdp"
+            android:textSize="@dimen/_14sdp"
+            android:textColor="@color/txtblack"
+            />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:visibility="gone"
+
+            android:background="@color/colorPrimary"></View>
+        <TextView
+            android:id="@+id/tvPaymentBilling"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Payment and Billing"
+            android:paddingBottom="@dimen/_10sdp"
+            android:paddingTop="@dimen/_10sdp"
+            android:visibility="gone"
+            android:paddingLeft="@dimen/_10sdp"
+            android:textSize="@dimen/_16sdp"
+            android:textColor="@color/txtblack"
+            />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/colorPrimary"></View>
+        <TextView
+            android:id="@+id/tvOrderHistory"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Order History"
+            android:paddingBottom="@dimen/_10sdp"
+            android:paddingTop="@dimen/_10sdp"
+            android:visibility="gone"
+            android:paddingLeft="@dimen/_10sdp"
+            android:textSize="@dimen/_14sdp"
+            android:textColor="@color/txtblack"
+            />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/colorPrimary"></View>
+        <TextView
+            android:id="@+id/tvReviewManagement"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Review Management"
+            android:paddingBottom="@dimen/_10sdp"
+            android:paddingTop="@dimen/_10sdp"
+
+            android:paddingLeft="@dimen/_10sdp"
+            android:textSize="@dimen/_14sdp"
+            android:textColor="@color/txtblack"
+            />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/colorPrimary"></View>
+        <TextView
+            android:id="@+id/tvAccountmanagemant"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Account Settings"
+            android:paddingBottom="@dimen/_10sdp"
+            android:paddingTop="@dimen/_10sdp"
+
+            android:paddingLeft="@dimen/_10sdp"
+            android:textSize="@dimen/_14sdp"
+            android:textColor="@color/txtblack"
+            />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/colorPrimary"></View>
+        <TextView
+            android:id="@+id/tvLogout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Logout"
+            android:paddingBottom="@dimen/_10sdp"
+            android:paddingTop="@dimen/_10sdp"
+
+            android:paddingLeft="@dimen/_10sdp"
+            android:textSize="@dimen/_14sdp"
+            android:textColor="@color/txtblack"
+            />
+
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/cross_green"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="50dp"
+        android:layout_marginRight="20dp"/>
+
+
+
+</RelativeLayout>

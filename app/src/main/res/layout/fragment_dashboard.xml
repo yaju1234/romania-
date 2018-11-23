@@ -1,0 +1,355 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:id="@+id/llBody"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:orientation="horizontal">
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:layout_marginBottom="@dimen/_2sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            app:cardBackgroundColor="#fff">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+            <RelativeLayout
+                android:id="@+id/rvPayment"
+                android:layout_width="0dp"
+                android:layout_weight="10"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_marginLeft="@dimen/_12sdp"
+                android:layout_marginRight="@dimen/_7sdp"
+                android:layout_height="match_parent">
+
+                <EditText
+                    android:id="@+id/etFilter"
+                    android:layout_below="@+id/ivbanne2"
+                    android:gravity="center|start"
+                    android:textColor="@color/txtblack"
+                    android:textSize="@dimen/_12ssp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/_5sdp"
+                    android:drawablePadding="@dimen/_5sdp"
+                    android:drawableLeft="@drawable/ic_search_black_24dp"
+                    android:background="@null"
+                    android:hint="Enter Keywords"/>
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/rvOrderManagement"
+                android:layout_width="@dimen/_20sdp"
+                android:layout_weight="1"
+
+                android:layout_gravity="center"
+                android:layout_marginBottom="@dimen/_4sdp"
+                android:layout_marginTop="@dimen/_4sdp"
+                android:layout_height="match_parent">
+                <ImageView
+                    android:id="@+id/ivFilter"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/_30sdp"
+                    android:padding="@dimen/_7sdp"
+                    android:src="@drawable/filter"/>
+
+            </RelativeLayout>
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rlProductList"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/_4sdp">
+
+    </android.support.v7.widget.RecyclerView>
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:id="@+id/llFilter"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ffffff"
+        android:visibility="invisible"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:orientation="vertical">
+            <android.support.v4.widget.NestedScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:layout_marginRight="@dimen/_10sdp"
+                    android:layout_marginBottom="@dimen/_10sdp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:text="group"
+                        android:textAllCaps="true"
+                        android:paddingTop="@dimen/_10sdp"
+                        android:textSize="@dimen/_12sdp"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:background="@drawable/rounded_corner_border"
+                        android:layout_marginTop="@dimen/_5sdp">
+                        <TextView
+                            android:id="@+id/tvGroup"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:text="Select group"
+                            android:padding="@dimen/_10sdp"/>
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:src="@drawable/ic_arrow_drop_down_black_24dp"/>
+                    </LinearLayout>
+                    <TextView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:text="Type"
+                        android:textAllCaps="true"
+                        android:paddingTop="@dimen/_10sdp"
+                        android:textSize="@dimen/_12sdp"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:background="@drawable/rounded_corner_border"
+                        android:layout_marginTop="@dimen/_5sdp">
+                        <TextView
+                            android:id="@+id/tvType"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:text="Select Type"
+                            android:padding="@dimen/_10sdp"/>
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:src="@drawable/ic_arrow_drop_down_black_24dp"/>
+                    </LinearLayout>
+
+                    <TextView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:text="Depozit"
+                        android:textAllCaps="true"
+                        android:paddingTop="@dimen/_10sdp"
+                        android:textSize="@dimen/_12sdp"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:background="@drawable/rounded_corner_border"
+                        android:layout_marginTop="@dimen/_5sdp">
+                        <TextView
+                            android:id="@+id/tvDepozit"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:text="Select Depozit"
+                            android:padding="@dimen/_10sdp"/>
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:src="@drawable/ic_arrow_drop_down_black_24dp"/>
+                    </LinearLayout>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:text="Rule"
+                        android:textAllCaps="true"
+                        android:paddingTop="@dimen/_10sdp"
+                        android:textSize="@dimen/_12sdp"/>
+
+                    <LinearLayout
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:background="@drawable/rounded_corner_border"
+                        android:layout_marginTop="@dimen/_5sdp">
+                        <TextView
+                            android:id="@+id/tvRule"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:text="Select Rule"
+                            android:padding="@dimen/_10sdp"/>
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:src="@drawable/ic_arrow_drop_down_black_24dp"/>
+                    </LinearLayout>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:text="Color"
+                        android:textAllCaps="true"
+                        android:paddingTop="@dimen/_10sdp"
+                        android:textSize="@dimen/_12sdp"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:background="@drawable/rounded_corner_border"
+                        android:layout_marginTop="@dimen/_5sdp">
+                        <TextView
+                            android:id="@+id/tvColor"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:text="Select Color"
+                            android:padding="@dimen/_10sdp"/>
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:src="@drawable/ic_arrow_drop_down_black_24dp"/>
+                    </LinearLayout>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:text="parte"
+                        android:textAllCaps="true"
+                        android:paddingTop="@dimen/_10sdp"
+                        android:textSize="@dimen/_12sdp"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:background="@drawable/rounded_corner_border"
+                        android:layout_marginTop="@dimen/_5sdp">
+                        <TextView
+                            android:id="@+id/tvParte"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:text="Select parte"
+                            android:padding="@dimen/_10sdp"/>
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:src="@drawable/ic_arrow_drop_down_black_24dp"/>
+                    </LinearLayout>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:text="dim"
+                        android:textAllCaps="true"
+                        android:paddingTop="@dimen/_10sdp"
+                        android:textSize="@dimen/_12sdp"/>
+
+                    <LinearLayout
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:background="@drawable/rounded_corner_border"
+                        android:layout_marginTop="@dimen/_5sdp">
+                        <TextView
+                            android:id="@+id/tvDin"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            android:text="Select Dim"
+                            android:padding="@dimen/_10sdp"/>
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:src="@drawable/ic_arrow_drop_down_black_24dp"/>
+                    </LinearLayout>
+
+                    <!--  <com.warkiz.widget.IndicatorSeekBar
+                          android:id="@+id/indicator"
+                          android:layout_width="match_parent"
+                          android:layout_height="wrap_content"
+                          android:layout_marginTop="16dp"
+                          app:isb_indicator_type="circular_bubble"
+                          app:isb_seek_bar_type="discrete_ticks_texts"
+                          app:isb_tick_num="5"
+                          app:isb_tick_type="oval" />-->
+
+
+                </LinearLayout>
+            </android.support.v4.widget.NestedScrollView>
+
+        </LinearLayout>
+        <TextView
+            android:id="@+id/tvFind"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary"
+            android:padding="@dimen/_10sdp"
+            android:textColor="@color/white"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="REFINE SEARCH" />
+    </LinearLayout>
+
+
+</RelativeLayout>

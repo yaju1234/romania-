@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:id="@+id/linMain"
+    android:layout_width="match_parent"
+    android:layout_marginLeft="@dimen/_10sdp"
+    android:layout_marginRight="@dimen/_10sdp"
+    android:layout_marginTop="@dimen/_3sdp"
+    android:layout_height="wrap_content">
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="@dimen/_3sdp"
+        app:cardElevation="@dimen/_2sdp"
+        android:layout_marginBottom="@dimen/_5sdp"
+        >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/_5sdp"
+
+        android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/ivItem"
+                android:layout_width="@dimen/_70sdp"
+                android:layout_height="@dimen/_70sdp"
+                android:src="@drawable/item"
+                android:layout_marginLeft="@dimen/_5sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:layout_marginRight="@dimen/_5sdp"
+                />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/_10sdp"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/tvCatMain"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Name : toc.DINMM_100.Dr80.stej"
+                    android:textColor="@color/txtblack"
+                    android:textSize="@dimen/_10ssp"
+                    android:textStyle="bold"
+                    />
+                <TextView
+                    android:id="@+id/tvCode"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Code : ODWM010P08DDA0ZZ200000"
+                    android:paddingTop="@dimen/_3sdp"
+                    android:paddingBottom="@dimen/_3sdp"
+                    android:textColor="@color/txtblack"
+                    android:textSize="@dimen/_9ssp"
+                    android:textStyle="normal"
+                    />
+                <TextView
+                    android:id="@+id/tvDeposit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Deposit : Hala"
+                    android:paddingTop="@dimen/_3sdp"
+                    android:paddingBottom="@dimen/_3sdp"
+                    android:textColor="@color/txtblack"
+                    android:textSize="@dimen/_9ssp"
+                    android:textStyle="normal"
+                    />
+                <TextView
+                    android:id="@+id/tvCant"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Edge : 10"
+                    android:paddingTop="@dimen/_3sdp"
+                    android:paddingBottom="@dimen/_3sdp"
+                    android:textColor="@color/txtblack"
+                    android:textSize="@dimen/_9ssp"
+                    android:textStyle="normal"
+                    />
+                <TextView
+                    android:id="@+id/tvDate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Date : 20.01.2012"
+                    android:paddingTop="@dimen/_3sdp"
+                    android:paddingBottom="@dimen/_2sdp"
+                    android:textColor="@color/green"
+                    android:textSize="@dimen/_9ssp"
+                    android:textStyle="normal"
+                    android:layout_gravity="end"
+                    />
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+    </android.support.v7.widget.CardView>
+</LinearLayout>
